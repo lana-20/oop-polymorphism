@@ -33,7 +33,8 @@ More precisely, in the OOP context, _polymorphism allows an object to behave dif
 Unlike many other popular object-oriented programming languages such as Java, Python doesn’t support compile-time polymorphism or method overloading. If a class or Python script has multiple methods with the same name, the method defined the latest overrides the earlier one.
 Python doesn’t use function arguments for method signature, that’s why method overloading is not supported in Python.
 
-Operator Overloading in Python
+__Operator Overloading in Python__
+
 Python supports operator overloading. This is another type of polymorphism where an operator behaves differently based on the type of the operands.
 * operator adds two numbers and concatenate two strings
 * operator multiplies two numbers and when used with a string and int, repeats the string given int times and concatenate them.
