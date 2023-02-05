@@ -5,6 +5,7 @@ __Polymorphism is one of the core concepts of the OOP (Object Oriented Programmi
 ### <img src="https://user-images.githubusercontent.com/70295997/216810246-f805f12f-1176-4474-b5cb-cb24b0aa5d88.png" width=40> COMPILE-TIME Polymorphism / Method OVERLOADING
 More precisely, in the OOP context, _polymorphism allows an object to behave differently in certain cases_, or, in other words allows an action to be accomplished  in different ways (approaches). _One way to implement polymorphism in Java is via method overloading. This is know as Compile-Time Polymorphism_ because the  compiler can identify at compile time which form of an overloaded method to call (multiple methods with the same name but different arguments). So, depending on which form of the overloaded method is called, the object behaves differently. For example, a class named <code>Triangle</code> can define multiple methods named <code>draw()</code> with different arguments.
 
+<img src="https://user-images.githubusercontent.com/70295997/216810749-64a94f9b-00ad-4d5b-b112-2baa6157bb52.png" width=40>
 
     class Triangle {
         void draw() {
@@ -41,6 +42,33 @@ Read More at Operator Overloading in Python.
 ### <img src="https://user-images.githubusercontent.com/70295997/216810338-982cef29-ced4-4cfd-9cd5-072520812118.png" width=40> RUNTIME Polymorphism / Method OVERRIDING / Dynamic Dispatch
 
 _Another way to implement polymorphism is via method overriding. This is a common approach where there's an IS-A relationship. It is known as Runtime Polymorhism, or Dynamic Dispatch._ Typically, we start with a parent interface/class containing a handful of methods. Next, each child class implements this parental interface/class and overrides these parental methods to provide a specific customized behavior. This time, polymorphism allows us to use any of these children classes exactly like its parent without any confusion of their types. This is possible because, at runtime, Java or Python is smart enough to distinguish among these classes and know which one is used. For example, an interface/class called <code>Shape</code> can declare a method named <code>draw()</code>, and the <code>Triangle</code>, <code>Rectangle</code>, and <code>Circle</code> classes implement the <code>Shape</code> interface/class and override the <code>draw()</code> method to draw the corresponding shape.
+
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40>
+
+    class Shape:
+        def draw(self):
+            print("Drawing a shape")
+
+    class Triangle(Shape):
+        def draw(self):
+            print("Drawing a triangle")
+
+    class Rectangle(Shape):
+        def draw(self):
+            print("Drawing a rectangle")
+
+    class Circle(Shape):
+        def draw(self):
+            print("Drawing a circle")
+
+    def main():
+        shapes = [Triangle(), Rectangle(), Circle()]
+        for shape in shapes:
+            shape.draw()
+
+    if __name__ == '__main__':
+        main()
+
 
 ### Advantages of Polymorphism
 * The scripts and classes written once can be reused and implemented multiple times.
