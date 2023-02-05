@@ -38,7 +38,6 @@ __Operator Overloading in Python__
 Python supports operator overloading. This is another type of polymorphism where an operator behaves differently based on the type of the operands.
 * operator adds two numbers and concatenate two strings
 * operator multiplies two numbers and when used with a string and int, repeats the string given int times and concatenate them.
-Read More at Operator Overloading in Python.
 
 ### <img src="https://user-images.githubusercontent.com/70295997/216810338-982cef29-ced4-4cfd-9cd5-072520812118.png" width=40> RUNTIME Polymorphism / Method OVERRIDING / Dynamic Dispatch
 
