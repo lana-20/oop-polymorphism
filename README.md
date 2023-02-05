@@ -5,6 +5,30 @@ __Polymorphism is one of the core concepts of the OOP (Object Oriented Programmi
 ### <img src="https://user-images.githubusercontent.com/70295997/216810246-f805f12f-1176-4474-b5cb-cb24b0aa5d88.png" width=40> COMPILE-TIME Polymorphism / Method OVERLOADING
 More precisely, in the OOP context, _polymorphism allows an object to behave differently in certain cases_, or, in other words allows an action to be accomplished  in different ways (approaches). _One way to implement polymorphism in Java is via method overloading. This is know as Compile-Time Polymorphism_ because the  compiler can identify at compile time which form of an overloaded method to call (multiple methods with the same name but different arguments). So, depending on which form of the overloaded method is called, the object behaves differently. For example, a class named <code>Triangle</code> can define multiple methods named <code>draw()</code> with different arguments.
 
+
+    class Triangle {
+        void draw() {
+            System.out.println("Drawing a triangle");
+        }
+
+        void draw(String color) {
+            System.out.println("Drawing a " + color + " triangle");
+        }
+
+        void draw(int width, int height) {
+            System.out.println("Drawing a triangle with width " + width + " and height " + height);
+        }
+    }
+
+    public class Main {
+        public static void main(String[] args) {
+            Triangle triangle = new Triangle();
+            triangle.draw();
+            triangle.draw("red");
+            triangle.draw(10, 20);
+        }
+    }
+
 Unlike many other popular object-oriented programming languages such as Java, Python doesn’t support compile-time polymorphism or method overloading. If a class or Python script has multiple methods with the same name, the method defined the latest overrides the earlier one.
 Python doesn’t use function arguments for method signature, that’s why method overloading is not supported in Python.
 
