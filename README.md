@@ -74,4 +74,4 @@ _Another way to implement polymorphism is via method overriding. This is a commo
 * The scripts and classes written once can be reused and implemented multiple times.
 * It helps in reducing the coupling between different functionalities and behavior of objects.
 
-<img width="800" src="https://user-images.githubusercontent.com/70295997/215978161-7ddb3756-0410-45f9-b441-53781bf5ee2a.png">
+<img width="800" src="https://user-images.githubusercontent.com/70295997/216844784-b7b015d0-d32f-4935-9267-cc75a4ac1c61.png">
