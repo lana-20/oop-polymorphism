@@ -103,3 +103,6 @@ _Another way to implement polymorphism is via method overriding. This is a commo
 * It helps in reducing the coupling between different functionalities and behavior of objects.
 
 <img width="800" src="https://user-images.githubusercontent.com/70295997/216844784-b7b015d0-d32f-4935-9267-cc75a4ac1c61.png">
+
+
+[Inheritance](https://github.com/lana-20/oop-inheritance), another core OOP concept is essential in supporting Polymorphism in programming.
