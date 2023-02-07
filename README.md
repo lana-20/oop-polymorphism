@@ -33,11 +33,13 @@ More precisely, in the OOP context, _polymorphism allows an object to behave dif
 Unlike many other popular object-oriented programming languages such as Java, Python doesn’t support compile-time polymorphism or method overloading. If a class or Python script has multiple methods with the same name, the method defined the latest overrides the earlier one.
 Python doesn’t use function arguments for method signature, that’s why method overloading is not supported in Python.
 
-__Operator Overloading in Python__
+<img src="https://user-images.githubusercontent.com/70295997/216810799-021871c1-780a-484d-8634-690968fe9c05.png" width=40> __Operator Overloading in Python__
 
 Python supports operator overloading. This is another type of polymorphism where an operator behaves differently based on the type of the operands.
 * operator multiplies two numbers and when used with a string and int, repeats the string given int times and concatenates them
 * operator adds two numbers and concatenates two strings
+
+The below snippet exhibits how to overload the <code>add</code> operator:
 
         class OperatorOverloading:
             def__init__(self, pages) :
@@ -51,7 +53,7 @@ Python supports operator overloading. This is another type of polymorphism where
         obj2 = OperatorOverloading(5)
         print(obj1 + obj2)  # Output: 15
 
-When changing <code>+</code> to <code>-</code> in the <code>total_pages</code> definition, the result is subtraction in lieu of addition.
+When changing <code>+</code> to <code>-</code> in the <code>total_pages</code> value definition, the result is subtraction in lieu of addition.
 
         class OperatorOverloading:
             def__init__(self, pages) :
