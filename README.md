@@ -36,8 +36,34 @@ Python doesn’t use function arguments for method signature, that’s why metho
 __Operator Overloading in Python__
 
 Python supports operator overloading. This is another type of polymorphism where an operator behaves differently based on the type of the operands.
-* operator adds two numbers and concatenate two strings
-* operator multiplies two numbers and when used with a string and int, repeats the string given int times and concatenate them.
+* operator multiplies two numbers and when used with a string and int, repeats the string given int times and concatenates them
+* operator adds two numbers and concatenates two strings
+
+        class OperatorOverloading:
+            def__init__(self, pages) :
+                self.pages = pages
+
+            def __add__(self, other):
+                total_pages = self.pages + other.pages
+                return total_pages
+
+        obj1 = OperatorOverloading(10)
+        obj2 = OperatorOverloading(5)
+        print(obj1 + obj2)  # Output: 15
+
+When changing <code>+</code> to <code>-</code> in the <code>total_pages</code> definition, the result is subtraction in lieu of addition.
+
+        class OperatorOverloading:
+            def__init__(self, pages) :
+                self.pages = pages
+
+            def __add__(self, other):
+                total_pages = self.pages - other.pages
+                return total_pages
+
+        obj1 = OperatorOverloading(10)
+        obj2 = OperatorOverloading(5)
+        print(obj1 + obj2)  # Output: 5
 
 ### <img src="https://user-images.githubusercontent.com/70295997/216810338-982cef29-ced4-4cfd-9cd5-072520812118.png" width=40> RUNTIME Polymorphism / Method OVERRIDING / Dynamic Dispatch
 
